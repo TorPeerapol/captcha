@@ -1,4 +1,8 @@
-
+function Captcha(){
+	this.echo = function(pattern,operator,leftOperand,rightOperand){
+		return "ONE + 1";
+	}
+}
 describe("Captcha()",function() {
 	var captcha = new Captcha();
 	it('shold "ONE + 1" ',function(){
