@@ -1,10 +1,15 @@
 function Captcha(){
 	var operator = ['+','-'];
 	var charOperand = ['ZERO','ONE','TWO','THREE','FOUR','FIVE','SIX','SEVEN','EIGHT','NINE'];
-	var intOperand = [0,1,2,3,4,5,6,7,8,9];
-	
+	var intOperand = ['0','1','2','3','4','5','6','7','8','9'];
+	var result = '';
+
 	this.echo = function(p,o,l,r){
 		return "ONE + 1";
+	}
+
+	this.pattern1 = function(o,l,r){
+
 	}
 }
 describe("Captcha()",function() {
