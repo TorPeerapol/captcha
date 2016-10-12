@@ -30,9 +30,9 @@ function Captcha(){
 describe("Captcha()",function() {
 	var captcha = new Captcha();
 	it('shold "1 + ONE" ',function(){
-		expect(captcha.echo(1,1,1,1)).toEqual("1 + ONE");
+		expect(captcha.echo(1,1,1,1)).toBe("1 + ONE");
 	});
 	it('shold "ONE - 1" ',function(){
-		expect(captcha.echo(2,2,1,1)).toEqual("ONE - 1");
+		expect(captcha.echo(2,2,1,1)).toBe("ONE - 1");
 	});
 });
