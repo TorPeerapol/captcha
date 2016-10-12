@@ -1,5 +1,9 @@
 function Captcha(){
-	this.echo = function(pattern,operator,leftOperand,rightOperand){
+	var operator = ['+','-'];
+	var charOperand = ['ZERO','ONE','TWO','THREE','FOUR','FIVE','SIX','SEVEN','EIGHT','NINE'];
+	var intOperand = [0,1,2,3,4,5,6,7,8,9];
+	
+	this.echo = function(p,o,l,r){
 		return "ONE + 1";
 	}
 }
