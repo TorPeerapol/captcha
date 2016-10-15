@@ -47,6 +47,10 @@ describe("Captcha()",function() {
 	it('shold "1 + SIX" ',function(){
 		expect(captcha.echo(1,1,1,6)).toBe("1 + SIX");
 	});
+	it('shold "1 + SEVEN" ',function(){
+		expect(captcha.echo(1,1,1,7)).toBe("1 + SEVEN");
+	});
+
 
 	it('shold "ONE - 1" ',function(){
 		expect(captcha.echo(2,2,1,1)).toBe("ONE - 1");
