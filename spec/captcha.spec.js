@@ -79,6 +79,9 @@ describe("Captcha()",function() {
 	it('shold "ONE - 7" ',function(){
 		expect(captcha.echo(2,2,1,7)).toBe("ONE - 7");
 	});
+	it('shold "ONE - 8" ',function(){
+		expect(captcha.echo(2,2,1,8)).toBe("ONE - 8");
+	});
 
 
 });
