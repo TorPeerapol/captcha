@@ -3,7 +3,7 @@ var charOperand = ['ZERO','ONE','TWO','THREE','FOUR','FIVE','SIX','SEVEN','EIGHT
 var intOperand = ['0','1','2','3','4','5','6','7','8','9'];
 
 function pattern1(o,l,r){
-	this.echo = function(o,l,r){		
+	this.echo = function(o,l,r){
 		return intOperand[l]+" "+operator[o-1]+" "+charOperand[r];
 	}
 }
@@ -14,7 +14,7 @@ function pattern2(o,l,r){
 	}
 }
 
-function Captcha(){	
+function Captcha(){
 
 	this.echo = function(p,o,l,r){
 		if(p === 1){
@@ -32,6 +32,13 @@ describe("Captcha()",function() {
 	it('shold "1 + ONE" ',function(){
 		expect(captcha.echo(1,1,1,1)).toBe("1 + ONE");
 	});
+	it('shold "1 + TWO" ',function(){
+		expect(captcha.echo(1,1,1,2)).toBe("1 + TWO");
+	});
+
+
+
+
 	it('shold "ONE - 1" ',function(){
 		expect(captcha.echo(2,2,1,1)).toBe("ONE - 1");
 	});
