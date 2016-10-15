@@ -53,6 +53,9 @@ describe("Captcha()",function() {
 	it('shold "1 + EIGHT" ',function(){
 		expect(captcha.echo(1,1,1,8)).toBe("1 + EIGHT");
 	});
+	it('shold "1 + NINE" ',function(){
+		expect(captcha.echo(1,1,1,9)).toBe("1 + NINT");
+	});
 
 
 	it('shold "ONE - 1" ',function(){
