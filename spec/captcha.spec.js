@@ -73,6 +73,9 @@ describe("Captcha()",function() {
 	it('shold "ONE - 5" ',function(){
 		expect(captcha.echo(2,2,1,5)).toBe("ONE - 5");
 	});
+	it('shold "ONE - 6" ',function(){
+		expect(captcha.echo(2,2,1,6)).toBe("ONE - 6");
+	});
 
 
 });
