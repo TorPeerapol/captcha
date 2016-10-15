@@ -70,6 +70,9 @@ describe("Captcha()",function() {
 	it('shold "ONE - 4" ',function(){
 		expect(captcha.echo(2,2,1,4)).toBe("ONE - 4");
 	});
+	it('shold "ONE - 5" ',function(){
+		expect(captcha.echo(2,2,1,5)).toBe("ONE - 5");
+	});
 
 
 });
