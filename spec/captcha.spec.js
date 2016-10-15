@@ -44,7 +44,9 @@ describe("Captcha()",function() {
 	it('shold "1 + FIVE" ',function(){
 		expect(captcha.echo(1,1,1,5)).toBe("1 + FIVE");
 	});
-
+	it('shold "1 + SIX" ',function(){
+		expect(captcha.echo(1,1,1,6)).toBe("1 + SIX");
+	});
 
 	it('shold "ONE - 1" ',function(){
 		expect(captcha.echo(2,2,1,1)).toBe("ONE - 1");
