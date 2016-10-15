@@ -82,6 +82,8 @@ describe("Captcha()",function() {
 	it('shold "ONE - 8" ',function(){
 		expect(captcha.echo(2,2,1,8)).toBe("ONE - 8");
 	});
-
+	it('shold "ONE - 9" ',function(){
+		expect(captcha.echo(2,2,1,9)).toBe("ONE - 9");
+	});
 
 });
