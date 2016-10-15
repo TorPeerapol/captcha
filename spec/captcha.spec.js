@@ -67,6 +67,9 @@ describe("Captcha()",function() {
 	it('shold "ONE - 3" ',function(){
 		expect(captcha.echo(2,2,1,3)).toBe("ONE - 3");
 	});
+	it('shold "ONE - 4" ',function(){
+		expect(captcha.echo(2,2,1,4)).toBe("ONE - 4");
+	});
 
 
 });
