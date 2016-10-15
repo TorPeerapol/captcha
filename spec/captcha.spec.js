@@ -38,7 +38,9 @@ describe("Captcha()",function() {
 	it('shold "1 + THREE" ',function(){
 		expect(captcha.echo(1,1,1,3)).toBe("1 + THREE");
 	});
-
+	it('shold "1 + FOUR" ',function(){
+		expect(captcha.echo(1,1,1,4)).toBe("1 + FOUR");
+	});
 
 
 	it('shold "ONE - 1" ',function(){
