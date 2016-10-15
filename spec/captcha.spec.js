@@ -50,6 +50,9 @@ describe("Captcha()",function() {
 	it('shold "1 + SEVEN" ',function(){
 		expect(captcha.echo(1,1,1,7)).toBe("1 + SEVEN");
 	});
+	it('shold "1 + EIGHT" ',function(){
+		expect(captcha.echo(1,1,1,8)).toBe("1 + EIGHT");
+	});
 
 
 	it('shold "ONE - 1" ',function(){
