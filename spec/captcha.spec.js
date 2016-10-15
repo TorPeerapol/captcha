@@ -35,7 +35,9 @@ describe("Captcha()",function() {
 	it('shold "1 + TWO" ',function(){
 		expect(captcha.echo(1,1,1,2)).toBe("1 + TWO");
 	});
-
+	it('shold "1 + THREE" ',function(){
+		expect(captcha.echo(1,1,1,3)).toBe("1 + THREE");
+	});
 
 
 
