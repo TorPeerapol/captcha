@@ -54,7 +54,7 @@ describe("Captcha()",function() {
 		expect(captcha.echo(1,1,1,8)).toBe("1 + EIGHT");
 	});
 	it('shold "1 + NINE" ',function(){
-		expect(captcha.echo(1,1,1,9)).toBe("1 + NINT");
+		expect(captcha.echo(1,1,1,9)).toBe("1 + NINE");
 	});
 
 
@@ -75,6 +75,9 @@ describe("Captcha()",function() {
 	});
 	it('shold "ONE - 6" ',function(){
 		expect(captcha.echo(2,2,1,6)).toBe("ONE - 6");
+	});
+	it('shold "ONE - 7" ',function(){
+		expect(captcha.echo(2,2,1,7)).toBe("ONE - 7");
 	});
 
 
