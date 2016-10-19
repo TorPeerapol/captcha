@@ -2,15 +2,42 @@ var operator = ['+','-'];
 var charOperand = ['ZERO','ONE','TWO','THREE','FOUR','FIVE','SIX','SEVEN','EIGHT','NINE'];
 var intOperand = ['0','1','2','3','4','5','6','7','8','9'];
 
+function charOper(){
+	this.echo = function(index){
+		return charOperand[index];
+	}
+	
+}
+
+function intOper(){
+	this.echo = function(index){
+		return intOperand[index];
+	}
+	
+}
+
+function oper(){
+	this.echo = function(index){
+		return operator[index];
+	}
+	
+}
+
 function pattern1(o,l,r){
 	this.echo = function(o,l,r){
-		return intOperand[l]+" "+operator[o-1]+" "+charOperand[r];
+		var i = new intOper();
+		var c = new charOper();
+		var op = new oper();
+		return i.echo(l) +" "+ op.echo(o-1)+" "+ c.echo(r);
 	}
 }
 
 function pattern2(o,l,r){
 	this.echo = function(o,l,r){
-		return charOperand[l]+" "+operator[o-1]+" "+intOperand[r];
+		var i = new intOper();		
+		var c = new charOper();
+		var op = new oper();
+		return c.echo(l) +" "+ op.echo(o-1)+" "+ i.echo(r);
 	}
 }
 
@@ -29,35 +56,34 @@ function Captcha(){
 
 describe("Captcha()",function() {
 
-	var pattern = 1;
-
 	var captcha = new Captcha();
+
 	it('shold "1 + ONE" ',function(){
-		expect(captcha.echo(pattern,1,1,1)).toBe("1 + ONE");
+		expect(captcha.echo(1,1,1,1)).toBe("1 + ONE");
 	});
 	it('shold "1 + TWO" ',function(){
-		expect(captcha.echo(pattern,1,1,2)).toBe("1 + TWO");
+		expect(captcha.echo(1,1,1,2)).toBe("1 + TWO");
 	});
 	it('shold "1 + THREE" ',function(){
-		expect(captcha.echo(pattern,1,1,3)).toBe("1 + THREE");
+		expect(captcha.echo(1,1,1,3)).toBe("1 + THREE");
 	});
 	it('shold "1 + FOUR" ',function(){
-		expect(captcha.echo(pattern,1,1,4)).toBe("1 + FOUR");
+		expect(captcha.echo(1,1,1,4)).toBe("1 + FOUR");
 	});
 	it('shold "1 + FIVE" ',function(){
-		expect(captcha.echo(pattern,1,1,5)).toBe("1 + FIVE");
+		expect(captcha.echo(1,1,1,5)).toBe("1 + FIVE");
 	});
 	it('shold "1 + SIX" ',function(){
-		expect(captcha.echo(pattern,1,1,6)).toBe("1 + SIX");
+		expect(captcha.echo(1,1,1,6)).toBe("1 + SIX");
 	});
 	it('shold "1 + SEVEN" ',function(){
-		expect(captcha.echo(pattern,1,1,7)).toBe("1 + SEVEN");
+		expect(captcha.echo(1,1,1,7)).toBe("1 + SEVEN");
 	});
 	it('shold "1 + EIGHT" ',function(){
-		expect(captcha.echo(pattern,1,1,8)).toBe("1 + EIGHT");
+		expect(captcha.echo(1,1,1,8)).toBe("1 + EIGHT");
 	});
 	it('shold "1 + NINE" ',function(){
-		expect(captcha.echo(pattern,1,1,9)).toBe("1 + NINE");
+		expect(captcha.echo(1,1,1,9)).toBe("1 + NINE");
 	});
 
 
