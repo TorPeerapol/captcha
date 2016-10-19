@@ -28,62 +28,66 @@ function Captcha(){
 }
 
 describe("Captcha()",function() {
+
+	var pattern = 1;
+
 	var captcha = new Captcha();
 	it('shold "1 + ONE" ',function(){
-		expect(captcha.echo(1,1,1,1)).toBe("1 + ONE");
+		expect(captcha.echo(pattern,1,1,1)).toBe("1 + ONE");
 	});
 	it('shold "1 + TWO" ',function(){
-		expect(captcha.echo(1,1,1,2)).toBe("1 + TWO");
+		expect(captcha.echo(pattern,1,1,2)).toBe("1 + TWO");
 	});
 	it('shold "1 + THREE" ',function(){
-		expect(captcha.echo(1,1,1,3)).toBe("1 + THREE");
+		expect(captcha.echo(pattern,1,1,3)).toBe("1 + THREE");
 	});
 	it('shold "1 + FOUR" ',function(){
-		expect(captcha.echo(1,1,1,4)).toBe("1 + FOUR");
+		expect(captcha.echo(pattern,1,1,4)).toBe("1 + FOUR");
 	});
 	it('shold "1 + FIVE" ',function(){
-		expect(captcha.echo(1,1,1,5)).toBe("1 + FIVE");
+		expect(captcha.echo(pattern,1,1,5)).toBe("1 + FIVE");
 	});
 	it('shold "1 + SIX" ',function(){
-		expect(captcha.echo(1,1,1,6)).toBe("1 + SIX");
+		expect(captcha.echo(pattern,1,1,6)).toBe("1 + SIX");
 	});
 	it('shold "1 + SEVEN" ',function(){
-		expect(captcha.echo(1,1,1,7)).toBe("1 + SEVEN");
+		expect(captcha.echo(pattern,1,1,7)).toBe("1 + SEVEN");
 	});
 	it('shold "1 + EIGHT" ',function(){
-		expect(captcha.echo(1,1,1,8)).toBe("1 + EIGHT");
+		expect(captcha.echo(pattern,1,1,8)).toBe("1 + EIGHT");
 	});
 	it('shold "1 + NINE" ',function(){
-		expect(captcha.echo(1,1,1,9)).toBe("1 + NINE");
+		expect(captcha.echo(pattern,1,1,9)).toBe("1 + NINE");
 	});
 
 
+	pattern = 2;
 	it('shold "ONE - 1" ',function(){
-		expect(captcha.echo(2,2,1,1)).toBe("ONE - 1");
+		expect(captcha.echo(pattern,2,1,1)).toBe("ONE - 1");
 	});
 	it('shold "ONE - 2" ',function(){
-		expect(captcha.echo(2,2,1,2)).toBe("ONE - 2");
+		expect(captcha.echo(pattern,2,1,2)).toBe("ONE - 2");
 	});
 	it('shold "ONE - 3" ',function(){
-		expect(captcha.echo(2,2,1,3)).toBe("ONE - 3");
+		expect(captcha.echo(pattern,2,1,3)).toBe("ONE - 3");
 	});
 	it('shold "ONE - 4" ',function(){
-		expect(captcha.echo(2,2,1,4)).toBe("ONE - 4");
+		expect(captcha.echo(pattern,2,1,4)).toBe("ONE - 4");
 	});
 	it('shold "ONE - 5" ',function(){
-		expect(captcha.echo(2,2,1,5)).toBe("ONE - 5");
+		expect(captcha.echo(pattern,2,1,5)).toBe("ONE - 5");
 	});
 	it('shold "ONE - 6" ',function(){
-		expect(captcha.echo(2,2,1,6)).toBe("ONE - 6");
+		expect(captcha.echo(pattern,2,1,6)).toBe("ONE - 6");
 	});
 	it('shold "ONE - 7" ',function(){
-		expect(captcha.echo(2,2,1,7)).toBe("ONE - 7");
+		expect(captcha.echo(pattern,2,1,7)).toBe("ONE - 7");
 	});
 	it('shold "ONE - 8" ',function(){
-		expect(captcha.echo(2,2,1,8)).toBe("ONE - 8");
+		expect(captcha.echo(pattern,2,1,8)).toBe("ONE - 8");
 	});
 	it('shold "ONE - 9" ',function(){
-		expect(captcha.echo(2,2,1,9)).toBe("ONE - 9");
+		expect(captcha.echo(pattern,2,1,9)).toBe("ONE - 9");
 	});
 
 });
